@@ -1,0 +1,28 @@
+.sidebar{
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
+  top: 55px;
+  left: 0;
+  width: 0;
+  transition: 0.1s;
+  background-color: #ffffff;
+  padding-left: 8px;
+}
+.sidebar img{
+  display: block;
+  width: 20px;
+  border-radius: 50%;
+}
+.sidebar .lib-item{
+  display:inline;
+}
+.sidebar.open {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 10px;
+  border-top:0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <script>
+        function toggleNav() {
+        let side = document.getElementById("sidebar");
+        side.classList.toggle("open");
+        }
+
+    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="media/youtube.png" type="image/png">
+  <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="video.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <title>Youtube Clone</title>
+</head>
+<body>
+  <div class="header">
+    <div class="left-section">
+      <button class="menu" onclick="toggleNav()"><img src="media/menu.png" alt="" class="menu-icon"></button>
+      <img src="media/youtube.png" alt="" class="ytb-logo">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="search" placeholder="Search">
+      <button class="search-button">
+      <img src="media/search.svg" alt="" class="search-icon">
+      </button>
+      <button class="voice-search-button">
+      <img src="media/voice-search-icon.svg" alt="" class="voice-search-icon">
+    </button>
+    </div>
+    <div class="right-section">
+      <img src="media/upload.png" alt="" class="upload">
+      <img src="media/notification.png" alt="" class="notification">
+      <img src="media/Alan-Becker-Logo.png" alt="" class="profile-pic">
+    </div>
+  </div>
+
+
+
+
+  <div class="sidebar" id="sidebar">
+            <div>
+            <img src="media/home.png" alt="">
+            <a class="nav-item" href="#">Home</a>
+            <br>
+            <img src="media/short.png" alt="">
+            <a class="nav-item" href="#">Shorts</a>
+        </div>
+        <hr>
+        <section class="subscriptions">
+            <h4>Subscriptions > </h4>
+            <img src="media/Alan-Becker-Logo.png" class="ch_logo"><p class="sub-item">Alan Becker</p>
+            <br>
+            <img src="media/marvel.png" class="ch_logo"><p class="sub-item">Marvel</p>
+            <br>
+            <img src="media/acdc.jpg" class="ch_logo"><p class="sub-item">AC/DC</p>
+            <br>
+            <img src="media/AA.jpg" class="ch_logo"><p class="sub-item">Asking Alexandria</p>
+            <br>
+            <button>Show more</button>
+        </section>
+        <hr>
+        <section>
+            <h4>You </h4>
+            <img src="media/history.png"  class="icon"><p class="lib-item">History</p>
+            <br>
+            <img src="media/playlist.png" class="icon"><p class="lib-item">Playlists</p>
+            <br>
+            <img src="media/clock.png" class="icon"><p class="lib-item">Watch later</p>
+            <br>
+            <img src="media/like.png" class="icon"><p class="lib-item">Liked videos</p>
+            <br>
+            <img src="media/videos.png" class="icon"><p class="lib-item">Your videos</p>
+            <br>
+            <img src="media/download.png" class="icon"><p class="lib-item">Downloads</p>
+            <br>
+            <button>Show more</button>
+        </section>
+        <hr>
+        <section class="explore">
+            <h4>Explore</h4>
+            <img src="media/music.png" alt="">
+            <p class="explore-item">Music</p>
+            <br>
+            <img src="media/youtube-gaming.png" alt="">
+            <p class="explore-item">Gaming</p>
+            <br>
+            <img src="media/trophy.png" alt="">
+            <p class="explore-item">Sports</p>
+        </section>
+        <hr>
+        <section class="more">
+            <h4>More from YouTube</h4>
+            <img src="media/youtube.png" alt="">
+            <p class="more-item">YouTube Premium</p>
+            <br>
+            <p class="more-item">YouTube Studio</p>
+            <br>
+            <p class="more-item">YouTube Music</p>
+            <br>
+            <p class="more-item">YouTube Kids</p>
+        </section>
+        <hr>
+        <section class="settings">
+            <img src="media/setting.png" alt="">
+            <p class="settings-item">Settings</p>
+            <br>
+            <img src="media/report.png" alt="">
+            <p class="settings-item">Report history</p>
+            <br>
+            <img src="media/question.png" alt="">
+            <p class="settings-item">Help</p>
+            <br>
+            <img src="media/alert.png" alt="">
+            <p class="settings-item">Send feedback</p>
+        </section>
+  </div>
+
+
+
+
+
+  <div class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_1.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/marko.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Real Coding Vlog - As a Software Engineer (ep. 3/2)</p>
+          <p class="video-author">Marko</p>
+          <p class="video-stats">40K views &#183; 1 month ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_2.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/BME.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Building a LattePanda Mu Cyberdeck</p>
+          <p class="video-author">Ben Makes Everything</p>
+          <p class="video-stats">822K views &#183; 10 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_2.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/BME.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Building a LattePanda Mu Cyberdeck</p>
+          <p class="video-author">Ben Makes Everything</p>
+          <p class="video-stats">822K views &#183; 10 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_3.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/fireship.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">God-Tier Developer Roadmap</p>
+          <p class="video-author">Fireship</p>
+          <p class="video-stats">8M views &#183; 3 years ago</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+</body>
+</html>

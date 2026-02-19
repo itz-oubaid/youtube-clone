@@ -1,0 +1,38 @@
+.category-bar {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px;
+  position: sticky;
+  top: 55px;
+  left: 70px;
+  right: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #e5e5e5;
+  scrollbar-width: none;
+}
+.cat {
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 8px;
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cat:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.cat:active{
+  background-color: #000;
+  color: #fff;
+}
+@media (min-width: 1022px) {
+  .category-bar {
+    left: 250px;
+  }
+}

@@ -1,17 +1,17 @@
 .thumbnail{
   width: 100%;
   border-radius: 10px;
-  transition: 0.5s ease;
+  transition:all 0.5s ease;
 }
-.thumbnail , .video-preview:hover{
+.video-preview:hover .thumbnail{
   border-radius:10px;
-  background-color: rgb(163, 158, 158);
   transform: scale(0.98);
+  filter: brightness(0.8);
   
 }
 .video-preview{
   padding: 2px;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 .profile-pic{
@@ -34,19 +34,45 @@
 }
 .video-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  gap: 2px;
+  margin:0 auto;
 }
 .video-info-grid{
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: 40px 1fr ;
   column-gap: 12px;
 }
 .video-title{
-  margin-top: 0;
+  margin: 0 0 12px 0;
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+@media (max-width : 767px) {
+  .video-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .middle-section{
+    justify-content: flex-end;
+    margin:0;
+  }
+}
+@media (min-width:768px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+  }
+
+}
+@media (min-width : 1024px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+    max-width: 100%;
+    margin-left: 100px;
+}
 }

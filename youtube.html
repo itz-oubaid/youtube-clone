@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="video.css">
   <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="categories.css">
   <title>Youtube Clone</title>
 </head>
 <body>
@@ -43,44 +44,44 @@
   </div>
 
 
+  <div class="category-bar">
+    <button class="cat">All</button>
+    <button class="cat">Music</button>
+    <button class="cat">Gaming</button>
+    <button class="cat">Live</button>
+    <button class="cat">Mixes</button>
+    <button class="cat">Lo-fi</button>
+    <button class="cat">Programming</button>
+  </div>
+
+
 
 
   <div class="sidebar" id="sidebar">
-            <div>
+        <section>
             <img src="media/home.png" alt="">
             <a class="nav-item" href="#">Home</a>
-            <br>
             <img src="media/short.png" alt="">
             <a class="nav-item" href="#">Shorts</a>
-        </div>
+        </section>
         <hr>
         <section class="subscriptions">
             <h4>Subscriptions > </h4>
             <img src="media/Alan-Becker-Logo.png" class="ch_logo"><p class="sub-item">Alan Becker</p>
-            <br>
             <img src="media/marvel.png" class="ch_logo"><p class="sub-item">Marvel</p>
-            <br>
             <img src="media/acdc.jpg" class="ch_logo"><p class="sub-item">AC/DC</p>
-            <br>
             <img src="media/AA.jpg" class="ch_logo"><p class="sub-item">Asking Alexandria</p>
-            <br>
             <button>Show more</button>
         </section>
         <hr>
-        <section>
+        <section class="you">
             <h4>You </h4>
             <img src="media/history.png"  class="icon"><p class="lib-item">History</p>
-            <br>
             <img src="media/playlist.png" class="icon"><p class="lib-item">Playlists</p>
-            <br>
             <img src="media/clock.png" class="icon"><p class="lib-item">Watch later</p>
-            <br>
             <img src="media/like.png" class="icon"><p class="lib-item">Liked videos</p>
-            <br>
             <img src="media/videos.png" class="icon"><p class="lib-item">Your videos</p>
-            <br>
             <img src="media/download.png" class="icon"><p class="lib-item">Downloads</p>
-            <br>
             <button>Show more</button>
         </section>
         <hr>
@@ -88,10 +89,8 @@
             <h4>Explore</h4>
             <img src="media/music.png" alt="">
             <p class="explore-item">Music</p>
-            <br>
             <img src="media/youtube-gaming.png" alt="">
             <p class="explore-item">Gaming</p>
-            <br>
             <img src="media/trophy.png" alt="">
             <p class="explore-item">Sports</p>
         </section>
@@ -100,24 +99,18 @@
             <h4>More from YouTube</h4>
             <img src="media/youtube.png" alt="">
             <p class="more-item">YouTube Premium</p>
-            <br>
             <p class="more-item">YouTube Studio</p>
-            <br>
             <p class="more-item">YouTube Music</p>
-            <br>
             <p class="more-item">YouTube Kids</p>
         </section>
         <hr>
         <section class="settings">
             <img src="media/setting.png" alt="">
             <p class="settings-item">Settings</p>
-            <br>
             <img src="media/report.png" alt="">
             <p class="settings-item">Report history</p>
-            <br>
             <img src="media/question.png" alt="">
             <p class="settings-item">Help</p>
-            <br>
             <img src="media/alert.png" alt="">
             <p class="settings-item">Send feedback</p>
         </section>
@@ -192,6 +185,85 @@
       </div>
     </div>
 
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_3.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/fireship.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">God-Tier Developer Roadmap</p>
+          <p class="video-author">Fireship</p>
+          <p class="video-stats">8M views &#183; 3 years ago</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_3.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/fireship.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">God-Tier Developer Roadmap</p>
+          <p class="video-author">Fireship</p>
+          <p class="video-stats">8M views &#183; 3 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_2.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/BME.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Building a LattePanda Mu Cyberdeck</p>
+          <p class="video-author">Ben Makes Everything</p>
+          <p class="video-stats">822K views &#183; 10 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_2.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/BME.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Building a LattePanda Mu Cyberdeck</p>
+          <p class="video-author">Ben Makes Everything</p>
+          <p class="video-stats">822K views &#183; 10 months ago</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="media/thumbnail_1.jpg" alt="">
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pic">
+          <img class="profile-pic" src="media/marko.jpg" alt="">
+        </div>
+        <div class="video-info">
+          <p class="video-title">Real Coding Vlog - As a Software Engineer (ep. 3/2)</p>
+          <p class="video-author">Marko</p>
+          <p class="video-stats">40K views &#183; 1 month ago</p>
+        </div>
+      </div>
+    </div>
 
 
 

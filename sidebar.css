@@ -1,25 +1,91 @@
 .sidebar{
   position: fixed;
-  overflow-x: hidden;
-  overflow-y: auto;
-  z-index: 1;
-  top: 55px;
+  top: 65px;
   left: 0;
   width: 0;
-  transition: 0.1s;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: #ffffff;
   padding-left: 8px;
+  transition: width 0.3s ease;
+  box-sizing: border-box;
+  z-index: 1;
+  scrollbar-width: none;
 }
 .sidebar img{
-  display: block;
+
   width: 20px;
-  border-radius: 50%;
 }
 .sidebar.open {
   width: 250px;
   border: 1px solid black;
   border-radius: 10px;
-  border-top:0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-top:none;
+  border-radius: 0 10px 10px 0;
+  padding: 20px 8px 20px 20px;
+}
+.sidebar section{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.nav-item, .sub-item, .lib-item, .explore-item, .more-item, .settings-item {
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  margin: 0;
+}
+.icon , .ch_logo,.lib-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.icon-row img, .ch_logo, .icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+@media (max-width: 768px){
+  .icon{
+    justify-content: center;
+  }
+
+}
+@media (min-width: 1022px) {
+  .sidebar{
+    width: 90px;
+    font-size: 14px;
+
+  }
+  .sidebar hr {
+    display: none;
+  }
+  .sidebar section.explore,
+  .sidebar section.more,
+  .sidebar section.settings {
+    display: none;
+  }
+  .sidebar .subscriptions img ,.sidebar .subscriptions p ,.sidebar .subscriptions button{
+    display: none;
+
+  }
+  .sidebar .you .icon , .sidebar .you  .lib-item , .sidebar .you  button{
+    display: none;
+  }
+  
 }
